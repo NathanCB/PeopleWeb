@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+</head>
+<body>
+
+
+    <ul>
+        {{#people}}
+        <li><a href="/person?id={{id}}">{{firstName}}{{lastName}}</a></li>
+        {{/people}}
+    </ul>
+    {{#nextOffset}}
+    <a href="/?offset={{nextOffset}}">NEXT</a>
+    {{/nextOffset}}
+    {{#previousOffset}}
+    <a href="/?offset={{previousOffset}}">PREVIOUS</a>
+    {{/previousOffset}}
+
+<br>
+
+
+</body>
+</html>
